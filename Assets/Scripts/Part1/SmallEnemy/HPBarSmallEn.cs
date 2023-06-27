@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class HPBarSmallEn : MonoBehaviour
+{
+    public Image fillHPBar;
+
+    // Start is called before the first frame update
+
+    public void UpdateBar(int currentValue, int maxValue)
+    {
+        fillHPBar.fillAmount = (float)currentValue / (float)maxValue;
+    }
+}
