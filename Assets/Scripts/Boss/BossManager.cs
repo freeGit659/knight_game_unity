@@ -5,15 +5,15 @@ using System;
 
 public class BossManager : MonoBehaviour
 {
-    public Animator animator;
-    public HPBar hpBar;
-    public GameObject player;
-    public PlayerController playerController;
-    public Transform[] patrolPoints;
-    public Transform damagePop;
-    public GameManager gameManager;
-    public GameObject spellSpawner;
-    public GameObject spellBox;
+    [SerializeField] private Animator animator;
+    [SerializeField] private HPBar hpBar;
+    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerController playerController;
+    [SerializeField] private Transform[] patrolPoints;
+    [SerializeField] private Transform damagePop;
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameObject spellSpawner;
+    [SerializeField] private GameObject spellBox;
     [SerializeField] private AudioClip spellSound;
     private bool isFacingLeft;
     public bool isWasAttack;

@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/Ky/OneDrive/Máy tính/final;C:/Users/Ky/OneDrive/Máy tính/dadwa;C:/Users/Ky/OneDrive/Máy tính/New folder;C:/Users/Ky/OneDrive/Máy tính/build;J:/Knight3.0;J:/Knight2.0;J:/Knight;J:/KnightWebGL;C:/Users/Ky/OneDrive/Máy tính/KnightWebGL;J:/UnityProject/KnightHaveSword/WebGL Builds\"}"
+                "value": "{\"m_Value\":\"J:/KnightWebFinal;C:/Users/Ky/OneDrive/Máy tính/final;C:/Users/Ky/OneDrive/Máy tính/dadwa;C:/Users/Ky/OneDrive/Máy tính/New folder;C:/Users/Ky/OneDrive/Máy tính/build;J:/Knight3.0;J:/Knight2.0;J:/Knight;J:/KnightWebGL;C:/Users/Ky/OneDrive/Máy tính/KnightWebGL\"}"
             }
         ]
     }

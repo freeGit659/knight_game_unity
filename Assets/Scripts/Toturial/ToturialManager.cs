@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToturialManager : MonoBehaviour
 {
-    public SmallEnemyManager[] smallEnemyManager;
+    [SerializeField] private SmallEnemyManager[] smallEnemyManager;
     // Start is called before the first frame update
     void Update()
     {

@@ -6,14 +6,15 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigidbody2D;
     Animator animator;
-    public GameObject attackArea;
-    public GameObject skillBox;
-    public Transform damagePop;
-    public GameManager gameManager;
-    public UIManager uiManager;
-    public TrailRenderer tr;
+    [SerializeField] private GameObject attackArea;
+    [SerializeField] private GameObject skillBox;
+    [SerializeField] private Transform damagePop;
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private TrailRenderer tr;
     [SerializeField] private AudioClip attackSound;
     [SerializeField] private AudioClip skillSound;
+    [SerializeField] private HPBar hPBar;
     private bool isFacingRight;
     private bool isStayGround;
     public bool isAreaAttackSmalEnemy;
@@ -24,9 +25,9 @@ public class PlayerController : MonoBehaviour
     public bool isSkill;
     public bool inSkill;
     public float moveSpeed;
-    public float skillPower = 20f;
-    public float skillTime = 0.5f;
-    public float skillCoolDown = 2f;
+    public float skillPower;
+    public float skillTime;
+    public float skillCoolDown;
     public float jumpForce;
     public float NormalAttackSpeed;
     private float movePos;
@@ -35,7 +36,6 @@ public class PlayerController : MonoBehaviour
     public int healthPoint;
     private int maxManaPoint;
     private int manaPoint;
-    public HPBar hPBar;
     public float timeAnimation;
     // Start is called before the first frame update
     void Start()
@@ -46,6 +46,9 @@ public class PlayerController : MonoBehaviour
         manaPoint = maxManaPoint;
         NormalAttackSpeed = 0.5f;
         NormalDamage = 20;
+        skillPower = 20f;
+        skillTime = 0.5f;
+        skillCoolDown = 2f;
         isFacingRight = true;
         rigidbody2D= GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

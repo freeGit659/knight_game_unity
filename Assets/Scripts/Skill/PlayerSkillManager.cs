@@ -6,8 +6,8 @@ using TMPro;
 
 public class PlayerSkillManager : MonoBehaviour
 {
-    public Image fillSkill;
-    public PlayerController playerController;
+    [SerializeField] private Image fillSkill;
+    [SerializeField] private PlayerController playerController;
     private float timeCoolDown;
     void Update()
     {
